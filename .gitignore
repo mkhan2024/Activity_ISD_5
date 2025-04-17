@@ -10,12 +10,14 @@ __pycache__/
 # Visual Studio Code
 .vscode/
 
-# Directories
-  - build
-  - dist
-  - logs
-  - source
+# Generated directories
+build/
+dist/
+logs/
 
-# Installer
-  - *.whl
-  - *.tar.gz
+# PyInstaller
+*.spec
+
+# Python packaging
+*.whl
+*.tar.gz
