@@ -1,29 +1,45 @@
-"""This module defines the SportsApp class."""
+"""Module for the main GUI application of the sports league."""
 
-__author__ = "ACE Faculty"
-__version__ = "1.0.0"
+__author__ = "Md Apurba Khan"
+__version__ = "1.2.0"
+__credits__ = "ACE Faculty"
 
 import sys
-from PySide6.QtWidgets import QWidget, QVBoxLayout, QTableWidget, \
-    QTableWidgetItem, QPushButton, QMessageBox
+from PySide6.QtWidgets import QWidget, QVBoxLayout, QTableWidget, QTableWidgetItem, QPushButton, QMessageBox
 from player.player import Player
 
 class SportsApp(QWidget):
-    """Represents the main window of the application."""
+    """Main window for the sports league application."""
 
     def __init__(self):
-        """Initializes a new instance of the SportsApp class."""
+        """Initialize the SportsApp main window.
 
+        Args:
+            None
+
+        Returns:
+            None
+
+        Raises:
+            None
+        """
         super().__init__()
         self.__initialize_widgets()
-
         self.button.clicked.connect(self.__show_message)
 
     def __initialize_widgets(self):
-        """Initializes the widgets on this window."""
+        """Set up the widgets for the main window.
 
+        Args:
+            None
+
+        Returns:
+            None
+
+        Raises:
+            None
+        """
         self.setWindowTitle("Sports League")
-
         layout = QVBoxLayout()
 
         # Create the table
@@ -45,7 +61,6 @@ class SportsApp(QWidget):
             self.table.setItem(i, 2, QTableWidgetItem(player.position))
 
         self.table.resizeColumnsToContents()
-        
         layout.addWidget(self.table)
 
         # Create the button
@@ -55,6 +70,15 @@ class SportsApp(QWidget):
         self.setLayout(layout)
 
     def __show_message(self):
-        """Displays a welcome message to the user."""
-        
+        """Display a welcome message to the user.
+
+        Args:
+            None
+
+        Returns:
+            None
+
+        Raises:
+            None
+        """
         QMessageBox.information(self, "Welcome", "Welcome to the Team!")

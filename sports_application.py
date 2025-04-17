@@ -1,18 +1,15 @@
-"""A client program written to verify correctness of the activity 
-classes.
-"""
+"""Client program to launch the sports league GUI application."""
 
-__author__ = "ACE Faculty"
-__version__ = "1.0.0"
+__author__ = "Md Apurba Khan"
+__version__ = "1.1.0"
+__credits__ = "ACE Faculty"
 
 from sports_app.sports_app import SportsApp
-
-# GIVEN:
 from PySide6.QtWidgets import QApplication
 import sys
 
-# GIVEN:
 if __name__ == "__main__":
+    """Launch the SportsApp GUI application."""
     app = QApplication(sys.argv)
     window = SportsApp()
     window.show()
