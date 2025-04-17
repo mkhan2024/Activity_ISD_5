@@ -1,1 +1,2 @@
-Update this before file with details user should know before installing.
+Installation instructions are important because they guide the user through the setup process, ensuring the software is installed correctly and functions as intended.
+Md Apurba Khan

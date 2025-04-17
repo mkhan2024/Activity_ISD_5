@@ -1,1 +1,2 @@
-Update this license file with licensing details.
+License files are important because they define the legal terms under which the software can be used, distributed, or modified. They protect the developer’s rights and inform users of their responsibilities.
+Md Apurba Khan
