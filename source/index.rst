@@ -1,14 +1,7 @@
-.. Sports Application documentation master file, created by
-   sphinx-quickstart on Wed Apr 16 20:13:02 2025.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Sports Application documentation
 ================================
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
+Add your content using reStructuredText syntax. See the `reStructuredText documentation <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ for details.
 
 .. toctree::
    :maxdepth: 2
@@ -16,9 +9,17 @@ documentation for details.
 
 .. automodule:: league.league
    :members:
+   :special-members: __init__, __str__
+
 .. automodule:: player.player
    :members:
+   :special-members: __init__, __str__
+
 .. automodule:: sports_app.sports_app
    :members:
+   :special-members: __init__
+   :private-members:
+
 .. automodule:: team.team
    :members:
+   :special-members: __init__, __str__

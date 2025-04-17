@@ -1,7 +1,7 @@
 """Module for the main GUI application of the sports league."""
 
 __author__ = "Md Apurba Khan"
-__version__ = "1.2.0"
+__version__ = "1.6.0"
 __credits__ = "ACE Faculty"
 
 import sys
@@ -9,18 +9,17 @@ from PySide6.QtWidgets import QWidget, QVBoxLayout, QTableWidget, QTableWidgetIt
 from player.player import Player
 
 class SportsApp(QWidget):
-    """Main window for the sports league application."""
-
+    """
+    Main window for the sports league application.
+    """
     def __init__(self):
-        """Initialize the SportsApp main window.
-
-        Args:
+        """
+        Initialize the SportsApp main window.
+        
+        Parameters:
             None
-
+        
         Returns:
-            None
-
-        Raises:
             None
         """
         super().__init__()
@@ -28,15 +27,13 @@ class SportsApp(QWidget):
         self.button.clicked.connect(self.__show_message)
 
     def __initialize_widgets(self):
-        """Set up the widgets for the main window.
-
-        Args:
+        """
+        Set up the widgets for the main window.
+        
+        Parameters:
             None
-
+        
         Returns:
-            None
-
-        Raises:
             None
         """
         self.setWindowTitle("Sports League")
@@ -70,15 +67,13 @@ class SportsApp(QWidget):
         self.setLayout(layout)
 
     def __show_message(self):
-        """Display a welcome message to the user.
-
-        Args:
+        """
+        Display a welcome message to the user.
+        
+        Parameters:
             None
-
+        
         Returns:
-            None
-
-        Raises:
             None
         """
         QMessageBox.information(self, "Welcome", "Welcome to the Team!")
